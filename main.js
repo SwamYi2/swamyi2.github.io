@@ -1,4 +1,4 @@
-import "./ascii_morph/ascii-morph/asciiMorph.js";
+import "./ascii-morph/asciiMorph.js";
 var element = document.querySelector("pre");
 AsciiMorph(element, { x: 15, y: 15 });
 

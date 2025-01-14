@@ -1,0 +1,3 @@
+[submodule "ascii-morph"]
+	path = ascii-morph
+	url = git@github.com:tholman/ascii-morph.git

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Swam's portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-dark text-white" id="myNav">
+      <span class="navbar-brand mb-0 h1 text-white">Swam's Portfolio</span>
+      <a class="navbar-brand" href="http://github.com/SwamYi2">
+        <img src="images/github-mark-white.png" width="30" height="30" alt="" />
+      </a>
+    </nav>
+    <div class="container text-white rounded mt-4" id="banner_container">
+      <div class="row" id="banner_row">
+        <div class="col-md-6 p-4 align-self-center" id="intro">
+          <p>Hello there! I'm</p>
+          <h1>SWAM YI LIN</h1>
+          <h5>
+            a <span class="highlight">full-stack </span> web developer
+            passionate in building scalable,<br />
+            efficient and responsive websites
+          </h5>
+        </div>
+        <div class="col align-self-center mx-auto" style="padding-right: 0">
+          <pre class="art" id="ascii_art"></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="transition-top">
+      <div class="row flex-nowrap">
+        <div class="col" id="left"></div>
+        <div class="col" id="right"></div>
+      </div>
+    </div>
+
+    <!-- Language icon gallery -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col mx-auto">
+          <div class="container-fluid scroll-container">
+            <img
+              class="img-fluid"
+              src="images/icons/html-5-icon.png"
+              alt="HTML"
+              title="HTML"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/css.png"
+              alt="CSS"
+              title="CSS"
+            />
+            <img
+              class="img-fluid"
+              src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+              alt="Bootstrap"
+              title="Bootstrap"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/js.png"
+              alt="JavaScript"
+              title="JavaScript"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/react.png"
+              alt="React"
+              title="React"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/java-icon.png"
+              alt="Java"
+              title="Java"
+            />
+
+            <img
+              class="img-fluid"
+              src="images/icons/spring.png"
+              alt="Spring"
+              title="Spring"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/python.png"
+              alt="Python"
+              title="Python"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/django.png"
+              alt="Django"
+              title="Django"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/Lua.png"
+              alt="Lua"
+              title="Lua"
+            />
+            <img
+              class="img-fluid"
+              src="images/icons/LOVE.png"
+              alt="LOVE"
+              title="LOVE"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="transition-bottom">
+      <div class="row flex-nowrap">
+        <div class="col" id="left"></div>
+        <div class="col" id="right"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="project_container">
+      <h2 style="font-family: 'Times New Roman', Times, serif; color: white">
+        <b> <u>My Projects </u></b>
+      </h2>
+
+      <div class="container p-4 rounded align-self-center project">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Space War</h3>
+            <p>Written with Lua in LOVE2D framework</p>
+            <p>
+              My first game project insipired by famous space shooting games
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="images/SpaceWar.png"
+              class="img-fluid"
+              alt="SpaceWar game image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container p-4 rounded align-self-center project">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Plants 50</h3>
+            <p>Written with Lua in LOVE2D framework</p>
+            <p>
+              This is my second game, attempting to create a game like plants vs
+              zombies
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="images/Plants50.png"
+              class="img-fluid"
+              alt="SpaceWar game image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="ascii_morph/ascii-morph/asciiMorph.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

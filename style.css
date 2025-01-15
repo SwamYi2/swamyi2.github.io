@@ -46,7 +46,8 @@ body {
   font-size: 0.6rem;
   color: white;
   font-family: "Courier New", Courier, monospace;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1rem;
+  line-height: 130%;
   text-align: center;
 }
 

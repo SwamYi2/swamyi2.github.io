@@ -79,7 +79,7 @@ body {
   max-height: 64px;
 }
 
-#transition-top #left {
+#info-transition #left {
   background-image: linear-gradient(
     to top right,
     rgba(0, 0, 0, 0) 50%,
@@ -88,7 +88,7 @@ body {
   height: 50px;
 }
 
-#transition-top #right {
+#info-transition #right {
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0) 50%,
@@ -97,7 +97,7 @@ body {
   height: 50px;
 }
 
-#transition-bottom #left {
+#project-transition-top #left {
   background-image: linear-gradient(
     to bottom right,
     rgba(0, 0, 0, 0) 50%,
@@ -106,7 +106,7 @@ body {
   height: 50px;
 }
 
-#transition-bottom #right {
+#project-transition-top #right {
   background-image: linear-gradient(
     to bottom left,
     rgba(0, 0, 0, 0) 50%,

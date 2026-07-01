@@ -1,47 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Share+Tech+Mono&display=swap");
 
 :root {
-  --banner-bg: #1c1936;
-  --project-bg: #0c2b3a;
+  --banner-bg: rgba(9, 26, 12, 0.7);
+  --project-bg: rgba(5, 18, 7, 0.8);
   
-  --neon-cyan: #00f0ff;
-  --neon-magenta: #ff007f;
-  --neon-purple: #9d4edd;
+  --neon-cyan: #39ff14;
+  --neon-magenta: #00ff66;
+  --neon-purple: #1b5e20;
   
-  --body-gradient-start: #0a051b;
-  --body-gradient-end: #050b14;
+  --body-gradient-start: #122416;
+  --body-gradient-end: #0a140d;
 }
 
 body {
   background-image: linear-gradient(
     to left top,
     var(--body-gradient-start),
-    #130a2a,
-    #0c1424,
+    #0f1f13,
+    #0c190f,
     var(--body-gradient-end)
   );
-  font-family: "Josefin Sans", sans-serif;
-  color: #f8fafc;
+  font-family: "Share Tech Mono", monospace;
+  color: #39ff14;
 }
 
 .navbar-light {
-  background-color: rgba(10, 5, 27, 0.85) !important;
+  background-color: rgba(9, 26, 12, 0.9) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--neon-purple);
-  box-shadow: 0 4px 20px rgba(157, 78, 221, 0.15);
+  box-shadow: 0 4px 20px rgba(27, 94, 32, 0.3);
 }
 
 #banner_container {
   background-color: var(--banner-bg);
   border-radius: 16px !important;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(157, 78, 221, 0.2);
+  border: 1px solid var(--neon-purple);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(57, 255, 20, 0.15);
   transition: box-shadow 0.5s ease;
 }
 
 #banner_container:hover {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(157, 78, 221, 0.35);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(57, 255, 20, 0.3);
 }
 
 #banner_row {
@@ -53,7 +53,7 @@ body {
 
 #banner_row .highlight {
   color: var(--neon-magenta);
-  text-shadow: 0 0 8px var(--neon-magenta), 0 0 20px rgba(255, 0, 127, 0.5);
+  text-shadow: 0 0 8px var(--neon-magenta), 0 0 20px rgba(0, 255, 102, 0.5);
   font-weight: 700;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -70,25 +70,25 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  text-shadow: 0 0 8px var(--neon-cyan), 0 0 20px rgba(0, 240, 255, 0.6);
+  text-shadow: 0 0 8px var(--neon-cyan), 0 0 20px rgba(57, 255, 20, 0.6);
   letter-spacing: 0.1rem;
   animation: neonPulse 2s infinite alternate;
 }
 
 @keyframes neonPulse {
   from {
-    text-shadow: 0 0 8px var(--neon-cyan), 0 0 15px rgba(0, 240, 255, 0.5);
+    text-shadow: 0 0 8px var(--neon-cyan), 0 0 15px rgba(57, 255, 20, 0.5);
   }
   to {
-    text-shadow: 0 0 15px var(--neon-cyan), 0 0 30px rgba(0, 240, 255, 0.8), 0 0 40px var(--neon-cyan);
+    text-shadow: 0 0 15px var(--neon-cyan), 0 0 30px rgba(57, 255, 20, 0.8), 0 0 40px var(--neon-cyan);
   }
 }
 
 #ascii_art {
   font-size: 0.6rem;
   color: var(--neon-cyan);
-  text-shadow: 0 0 5px rgba(0, 240, 255, 0.7);
-  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0 0 5px rgba(57, 255, 20, 0.7);
+  font-family: "Share Tech Mono", monospace;
   letter-spacing: 0.1rem;
   line-height: 130%;
   text-align: center;
@@ -202,32 +202,30 @@ body {
 .project {
   margin-top: 35px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  color: white;
-  border-radius: 16px !important;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--neon-purple);
+  color: #a3ffa3;
+  border-radius: 12px !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .project:hover {
   transform: translateY(-5px);
   border-color: var(--neon-cyan);
-  box-shadow: 0 15px 35px rgba(0, 240, 255, 0.15), 0 0 15px rgba(0, 240, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(57, 255, 20, 0.25);
 }
 
 .project h3 {
   font-family: "Jaro", serif;
   color: var(--neon-cyan);
-  text-shadow: 0 0 5px rgba(0, 240, 255, 0.3);
+  text-shadow: 0 0 5px rgba(57, 255, 20, 0.3);
 }
 
 .project a {
   color: var(--neon-cyan);
   font-weight: bold;
-  text-shadow: 0 0 5px rgba(0, 240, 255, 0.5);
+  text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
   border-bottom: 2px dotted var(--neon-cyan);
   text-decoration: none;
   transition: all 0.2s ease;
@@ -253,10 +251,10 @@ body {
 }
 
 footer {
-  background-color: rgba(10, 5, 27, 0.95);
+  background-color: rgba(9, 26, 12, 0.95);
   border-top: 2px solid var(--neon-purple);
-  box-shadow: 0 -10px 30px rgba(157, 78, 221, 0.15);
-  color: #a0aec0;
+  box-shadow: 0 -10px 30px rgba(27, 94, 32, 0.25);
+  color: #a3ffa3;
 }
 
 footer h5 {
@@ -318,7 +316,7 @@ footer h5 {
 
 .btn-outline-cyan:hover {
   background: var(--neon-cyan);
-  color: #050b14;
+  color: #010401;
   box-shadow: 0 0 15px var(--neon-cyan);
 }
 
